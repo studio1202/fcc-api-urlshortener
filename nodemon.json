@@ -1,13 +1,17 @@
 {
-  "restartable": "rs",
-  "ignore": [
-      ".git",
-      "node_modules/**/node_modules"
-  ],
-  "verbose": true,
+  "delay": "1000",
   "env": {
-      "NODE_ENV": "development"
+    "NODE_ENV": "development"
   },
-  "ext": "js,json,html,css",
-  "delay": "2500"
+  "ext": "js,json,html,css,env",
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules"
+  ],
+  "restartable": "rs",
+  "verbose": true,
+  "watch": [
+    ".",
+    ".env"
+  ]
 }
