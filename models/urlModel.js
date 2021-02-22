@@ -60,7 +60,7 @@ function saveRedirectP(url) {
  * @returns {Object} Shortened url object { url, shorturl }
  */
 function toFccFormat(urlModel) {
-  return { url: urlModel.url, shortUrl: urlModel.shortUrl };
+  return { original_url: urlModel.url, short_url: urlModel.shortUrl };
 }
 
 module.exports = { getRedirectP, saveRedirectP, toFccFormat };
